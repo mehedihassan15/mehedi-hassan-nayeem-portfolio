@@ -232,6 +232,14 @@ img {
     display: none;
 }
 
+b.b {
+    font-weight: bold;
+}
+
+b.bi {
+    font-weight: bold;
+    font-style: italic;
+}
 /*  */
 /*  */
 /*  */
@@ -419,9 +427,6 @@ img {
     justify-content: center;
 }
 
-.nav-menu ul {
-}
-
 .nav-menu ul li {
     display: block;
     margin-bottom: 20px;
@@ -436,7 +441,7 @@ img {
     text-decoration: none;
     font-size: 28px;
     font-weight: 600;
-    width: 160px;
+    width: 200px;
     text-align: center;
     color: var(--text-black-600);
     padding: 5px 30px;
@@ -460,6 +465,7 @@ img {
     font-size: 15px;
     color: var(--text-black-600);
     transform: translateY(-50%) rotate(-90deg);
+    margin-left: -20px;
 }
 
 .fade-out-effect {
@@ -827,6 +833,7 @@ img {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 15px;
+    margin: 10px 0;
 }
 
 .about-section .skills .skill-item .progress {
@@ -836,6 +843,7 @@ img {
 }
 .about-section .skills .skill-item p {
     font-size: 16px;
+    font-weight: bold;
     color: var(--text-black-600);
     text-transform: capitalize;
     margin: 0 0 10px;
@@ -997,7 +1005,7 @@ img {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
     transform: perspective(1000px);
 }
 
@@ -1007,6 +1015,22 @@ img {
     border-radius: 5px;
     width: 100%;
     transform: translateZ(20px);
+}
+
+.service-section .service-item-inner h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+}
+
+.service-section .service-item-inner p {
+    font-size: 17px;
+    color: var(--text-black-600);
+    margin: 0;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .service-section .service-item-inner:hover h3,
@@ -1056,19 +1080,6 @@ p {
     transition: all 0.3s ease;
 }
 
-.service-section .service-item-inner h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-black-700);
-}
-
-.service-section .service-item-inner p {
-    font-size: 17px;
-    color: var(--text-black-600);
-    margin: 0;
-    line-height: 26px;
-    font-weight: bold;
-}
 /* ========================== service section ends ========================== */
 
 /*  */
@@ -1593,3 +1604,11 @@ a {
 }
 
 /* ========================== fotter section ends ========================== */
+
+/* ========================== media secreen section ========================== */
+
+@media screen and (max-width: 400px) {
+    .home-section .home-text #auto-typing-animation p {
+        font-size: 40px;
+    }
+}
