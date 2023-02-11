@@ -1289,6 +1289,16 @@ p {
     margin: 0;
 }
 
+.portfolio-popup .description p > span.lc {
+    font-weight: bolder;
+    display: block;
+}
+
+.portfolio-popup .description p > span.lc > a {
+    color: royalblue;
+    text-transform: lowercase;
+}
+
 .portfolio-popup .pp-title {
     padding: 0 15px;
 }
@@ -1301,6 +1311,11 @@ body
     > h2 {
     font-size: 30px;
     color: var(--text-black-300);
+}
+
+.portfolio-popup .pp-title h2 {
+    color: white;
+    font-size: 30px;
 }
 
 .portfolio-popup .pp-title p {
