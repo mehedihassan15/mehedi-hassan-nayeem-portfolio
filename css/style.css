@@ -1619,11 +1619,3 @@ a {
 }
 
 /* ========================== fotter section ends ========================== */
-
-/* ========================== media secreen section ========================== */
-
-@media screen and (max-width: 400px) {
-    .home-section .home-text #auto-typing-animation p {
-        font-size: 40px;
-    }
-}
